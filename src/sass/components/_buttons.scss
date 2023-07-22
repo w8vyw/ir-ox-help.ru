@@ -1,0 +1,33 @@
+.btn {
+	display: inline-block;
+	padding: 20px 40px;
+	background: linear-gradient(88.33deg, #f0bc354d -5.29%, #fff5d14d 21.36%, #ffeeb44d 48.02%, #f4c6204d 74.68%, #ffffff4d 101.34%, #ffcb464d 127.99%), linear-gradient(350.31deg, #ffe296 -8.19%, #ffcb46 23.93%, #fff2c6 128.87%);
+	border-radius: 10px;
+	box-shadow: 0 4px 0 #ffcb46;
+	color: #755400;
+
+	transition: .2s ease-in-out;
+
+	&:hover {
+		filter: brightness(90%);
+	}
+
+	&:focus {
+		filter: brightness(90%);
+	}
+
+	&:active {
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+	}
+
+	&--blue {
+		background: linear-gradient(350.31deg, #cdeeff -8.19%, #29b6ff 23.93%, #c0eaff 128.87%);
+		box-shadow: 0 4px 0 #29b6ff;
+
+		color: #2d4168;
+	}
+
+	@media screen and (max-width: $md) {
+		padding: 15px 30px;
+	}
+}

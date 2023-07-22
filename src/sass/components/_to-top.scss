@@ -1,0 +1,27 @@
+.to-top {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	padding: 12.33px 13px;
+	background: $white;
+	border-radius: 50%;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, .1);
+
+	.i-to-top {
+		width: 24px;
+		height: 15px;
+		fill: $purple;
+	}
+
+	transform: scale(.7);
+	opacity: 0;
+	visibility: hidden;
+
+	transition: .4s ease-in-out;
+
+	&--active {
+		transform: scale(1);
+		opacity: 1;
+		visibility: visible;
+	}
+}

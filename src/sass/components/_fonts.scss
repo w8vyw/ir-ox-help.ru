@@ -1,0 +1,15 @@
+@mixin font($family, $style, $weight, $url) {
+	@font-face {
+		font-family: $family;
+		font-style: $style;
+		font-weight: $weight;
+		src: url('../../fonts/#{$url}.woff2') format('woff2');
+		font-display: swap;
+	}
+}
+
+@include font(Inter, normal, 400, Inter-400);
+@include font(Inter, normal, 500, Inter-500);
+@include font(Inter, normal, 600, Inter-600);
+@include font(Inter, normal, 700, Inter-700);
+@include font(Tenor Sans, normal, 400, TenorSans-400);

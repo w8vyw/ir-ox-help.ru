@@ -1,0 +1,46 @@
+{
+	"name": "webpack",
+	"version": "2.0.0",
+	"description": "webpack",
+	"author": "w8vy",
+	"homepage": "https://github.com/w8vyw/webpack",
+	"main": "webpack.config.js",
+	"scripts": {
+		"s": "webpack s",
+		"dev": "webpack",
+		"prod": "cross-env NODE_ENV=prod webpack"
+	},
+	"dependencies": {
+		"swiper": "^9.4.1"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.22.6",
+		"@babel/preset-env": "^7.22.6",
+		"babel-loader": "^9.1.2",
+		"cross-env": "^7.0.3",
+		"css-loader": "^6.8.1",
+		"favicons-webpack-plugin": "^6.0.0",
+		"filemanager-webpack-plugin": "^8.0.0",
+		"html-loader": "^4.2.0",
+		"html-webpack-plugin": "^5.5.3",
+		"image-minimizer-webpack-plugin": "^3.8.3",
+		"imagemin": "^8.0.1",
+		"imagemin-gifsicle": "^7.0.0",
+		"imagemin-jpegtran": "^7.0.0",
+		"imagemin-optipng": "^8.0.0",
+		"mini-css-extract-plugin": "^2.7.6",
+		"mqpacker": "^7.0.0",
+		"postcss": "^8.4.24",
+		"postcss-loader": "^7.3.3",
+		"postcss-preset-env": "^8.5.1",
+		"resolve-url-loader": "^5.0.0",
+		"sass": "^1.63.6",
+		"sass-loader": "^13.3.2",
+		"webpack": "^5.88.1",
+		"webpack-cli": "^5.1.4",
+		"webpack-dev-server": "^4.15.1"
+	},
+	"browserslist": [
+		"defaults"
+	]
+}

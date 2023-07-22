@@ -1,0 +1,16 @@
+.preview {
+	margin-bottom: 50px;
+
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		gap: 40px;
+		max-height: 500px;
+		overflow: hidden;
+	}
+
+	&__img {
+		object-fit: cover;
+		object-position: center;
+	}
+}

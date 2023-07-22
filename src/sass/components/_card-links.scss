@@ -1,0 +1,58 @@
+.card-links {
+	&__title {
+		margin-bottom: 60px;
+
+		text-align: center;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 30px;
+	}
+
+	&__link {
+		position: relative;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		width: 350px;
+		height: 270px;
+		padding: 40px 80px 40px 40px;
+
+		font-size: 30px;
+		color: $white;
+
+		border-radius: 10px;
+		overflow: hidden;
+
+		&::after {
+			content: '';
+
+			position: absolute;
+			bottom: 40px;
+			right: 50px;
+
+			display: block;
+
+			width: 13px;
+			height: 22px;
+
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 22' width='13' height='22'%3E%3Cpath d='M8.26346 11.1924L0.131728 3.06065L2.25305 0.939335L12.5061 11.1924L2.25305 21.4454L0.131728 19.3241L8.26346 11.1924Z' fill='white'/%3E%3C/svg%3E");
+		}
+	}
+
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+
+		width: 350px;
+		height: 270px;
+		object-fit: cover;
+		object-position: center;
+	}
+}

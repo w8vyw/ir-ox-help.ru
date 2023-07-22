@@ -1,0 +1,73 @@
+body {
+	display: flex;
+	flex-direction: column;
+
+	.page {
+		flex-grow: 1;
+	}
+
+	font-family: Inter;
+
+	min-height: 5000px;
+	background: $pink;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: $pink;
+}
+
+::-webkit-scrollbar-thumb {
+	background: $purple;
+	border-radius: 10px;
+}
+
+::selection {
+	background: $purple;
+}
+
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0 0 0 0);
+}
+
+.scroll-disabled {
+	overflow: hidden;
+}
+
+.main-page {
+	background: $white;
+
+	&::-webkit-scrollbar-track {
+		background: $white;
+	}
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 900;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+
+	opacity: 0;
+	visibility: hidden;
+
+	transition: 0.35s ease-in-out;
+
+	&--active {
+		opacity: 1;
+		visibility: visible;
+	}
+}

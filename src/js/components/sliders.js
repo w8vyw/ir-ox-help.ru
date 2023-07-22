@@ -1,0 +1,6 @@
+import Swiper, { Navigation, Pagination, Keyboard, Mousewheel } from 'swiper'
+import 'swiper/scss'
+import 'swiper/scss/navigation'
+import 'swiper/scss/pagination'
+import 'swiper/scss/keyboard'
+import 'swiper/scss/mousewheel'

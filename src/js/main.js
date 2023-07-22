@@ -1,0 +1,5 @@
+import '../index.html'
+// import './components/sliders'
+import '../sass/main.scss'
+import './components/menu'
+import './components/toTop'

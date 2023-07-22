@@ -1,0 +1,7 @@
+User-agent: Yandex
+Disallow:
+User-agent: Googlebot
+Disallow:
+User-agent: *
+Disallow:
+Sitemap: https://ir-ox-help.com/sitemap.xml

@@ -1,0 +1,17 @@
+*, *::before, *::after {box-sizing: border-box; margin: 0; padding: 0; border: 0; outline: none; font: inherit; color: inherit;}
+html, body {width: 100%; min-width: 360px; min-height: 100vh; scroll-behavior: smooth; font-size: 22px; font-weight: 400; line-height: 1.15; color: black; -webkit-text-size-adjust: 100%;}
+img, picture, video {display: block; max-width: 100%;}
+a, a:link, a:hover, a:focus, a:active, a:visited {text-decoration: none;}
+ol, ul, li {list-style: none;}
+a, button, details {cursor: pointer;}
+header, nav, main, section, article, aside, footer, summary {display: block;}
+pre, code, kbd, samp {font-family: monospace, monospace;}
+b, strong {font-weight: bolder;}
+h1, h2, h3, h4, h5, h6, p, article {overflow-wrap: break-word;}
+
+sup, sub {position: relative; vertical-align: baseline; line-height: 0;}
+sup {top: 0.5em;}
+sub {bottom: -0.25em;}
+
+button {background: none;}
+@media screen and (max-width: 768px) {body {font-size: 18px;}}

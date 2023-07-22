@@ -1,0 +1,39 @@
+.flower-tl {
+	position: absolute;
+	top: 1000px;
+	left: 0;
+
+	@media screen and (max-width: 1600px) {
+		display: none;
+	}
+}
+
+.flower-tr {
+	position: absolute;
+	top: 2000px;
+	right: 0;
+
+	@media screen and (max-width: 1600px) {
+		display: none;
+	}
+}
+
+.flower-bl {
+	position: absolute;
+	top: 3000px;
+	left: 0;
+
+	@media screen and (max-width: 1600px) {
+		display: none;
+	}
+}
+
+.flower-br {
+	position: absolute;
+	top: 3500px;
+	right: 0;
+
+	@media screen and (max-width: 1600px) {
+		display: none;
+	}
+}

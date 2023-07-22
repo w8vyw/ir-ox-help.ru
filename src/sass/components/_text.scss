@@ -1,0 +1,92 @@
+.title {
+	font-size: 50px;
+	font-family: Tenor Sans;
+
+	span {
+		display: block;
+
+		font-size: 40px;
+	}
+}
+
+.subtitle {
+	font-size: 35px;
+	font-weight: 500;
+}
+
+.text-section {
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+}
+
+.p {
+	span {
+		font-weight: 600;
+	}
+}
+
+.slogan {
+	font-family: Tenor Sans;
+	font-size: 35px;
+	text-align: center;
+
+	span {
+		color: $purple;
+	}
+}
+
+.note {
+	position: relative;
+
+	padding: 30px 30px 30px 89px;
+
+	font-size: 22px;
+
+	background: $white;
+	border-radius: 10px;
+	box-shadow: 0px 4px 4px 0px #0000001a;
+
+	@media screen and (max-width: $md) {
+		padding: 20px;
+
+		font-size: 18px;
+	}
+
+	&::before {
+		content: '';
+
+		position: absolute;
+		top: 30px;
+		left: 30px;
+
+		display: block;
+		width: 29px;
+		height: 29px;
+
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 29 29' width='29' height='29'%3E%3Cpath d='M29 14.5C29 22.5081 22.5081 29 14.5 29C6.49187 29 0 22.5081 0 14.5C0 6.49187 6.49187 0 14.5 0C22.5081 0 29 6.49187 29 14.5Z' fill='%23CB19A4' fill-opacity='0.2'/%3E%3Cpath d='M15.8439 6L15.6408 17.3984H13.4767L13.2736 6H15.8439ZM14.5626 22.1484C14.1303 22.1484 13.7605 21.9974 13.4533 21.6953C13.146 21.388 12.9949 21.0182 13.0001 20.5859C12.9949 20.1589 13.146 19.7943 13.4533 19.4922C13.7605 19.1849 14.1303 19.0312 14.5626 19.0312C14.9845 19.0312 15.3491 19.1849 15.6564 19.4922C15.9637 19.7943 16.1199 20.1589 16.1251 20.5859C16.1199 20.8724 16.0444 21.1354 15.8986 21.375C15.7579 21.6094 15.5704 21.7969 15.3361 21.9375C15.1017 22.0781 14.8439 22.1484 14.5626 22.1484Z' fill='white'/%3E%3C/svg%3E");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+
+		@media screen and (max-width: $md) {
+			display: none;
+		}
+	}
+}
+
+.text-section--with-img {
+	.text-section__wrapper {
+		display: flex;
+		flex-direction: row;
+		gap: 60px;
+	}
+
+	.text-section__text {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+}
